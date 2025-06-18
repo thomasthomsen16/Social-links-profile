@@ -1,0 +1,85 @@
+:root {
+
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+    --paleGreen: hsl(75, 94%, 57%);
+    --font-size: 14px;
+
+
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt_wght.ttf);
+}
+
+body {
+    background-color: var(--Grey900);
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    border-radius: 100%;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+}
+
+h2 {
+    color: var(--paleGreen);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#bio {
+    color: rgb(183, 183, 183);
+}
+
+p {
+    font-size: var(--font-size);
+    color: white;
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: var(--Grey800);
+    width: 340px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.links>p {
+    margin: 10px;
+    background-color: var(--Grey700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.links>p:hover{
+    background-color: var(--paleGreen);
+}
